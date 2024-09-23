@@ -11,6 +11,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
+
     <VideoView
         android:layout_width="260sp"
         android:layout_height="250sp"
