@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".RegistrationActivity"
+    android:background="@drawable/app_page"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cvRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#EE86887A"
+            app:cardCornerRadius="20sp"
+            app:cardElevation="15sp">
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:layout_margin="10sp"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeColor="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:counterTextColor="@color/black"
+                   >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etRegisterName"
+                        android:textColor="@color/black"
+                        android:drawableLeft="@drawable/icon_user"
+                        android:drawablePadding="12sp"
+                        android:paddingLeft="12sp"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColorHint="@color/black"
+                        android:fontFamily="@font/aldrich"
+                        android:inputType="textPersonName"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile Number"
+                    android:layout_margin="10sp"
+                    android:textColorHint="@color/black"
+
+                    app:boxStrokeColor="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:counterTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etRegisterMobileNo"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:maxLength="10"
+                        android:textColorHint="@color/black"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/black"
+                        android:drawableLeft="@drawable/icon_mobile"
+                        android:drawablePadding="12sp"
+                        android:paddingLeft="12sp"
+                        android:inputType="number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email Id"
+                    android:layout_margin="10sp"
+                    android:textColorHint="@color/black"
+
+                    app:boxStrokeColor="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:counterTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etRegisterEmailId"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColorHint="@color/black"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/black"
+                        android:drawableLeft="@drawable/icon_email"
+                        android:drawablePadding="12sp"
+                        android:paddingLeft="12sp"
+                        android:inputType="text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:layout_margin="10sp"
+                    android:textColorHint="@color/black"
+
+                    app:boxStrokeColor="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:counterTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etRegisterUsername"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColorHint="@color/black"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/black"
+                        android:drawableLeft="@drawable/icon_user"
+                        android:drawablePadding="12sp"
+                        android:paddingLeft="12sp"
+                        android:inputType="text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:layout_margin="10sp"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeColor="@color/black"
+                    app:hintTextColor="@color/black"
+                    app:counterTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etRegisterPassword"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColorHint="@color/black"
+                        android:fontFamily="@font/aldrich"
+                        android:textColor="@color/black"
+                        android:drawableLeft="@drawable/icon_password"
+                        android:drawablePadding="12sp"
+                        android:paddingLeft="12sp"
+                        android:inputType="text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnRegisterRegister"
+                    android:layout_margin="10sp"
+                    android:layout_gravity="center"
+                    android:text="Register"
+                    android:background="@drawable/btnshape"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="10sp"
+                    android:fontFamily="@font/aldrich"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </ScrollView>
+</LinearLayout>

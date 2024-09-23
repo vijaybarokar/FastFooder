@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <VideoView
+        android:layout_width="260sp"
+        android:layout_height="250sp"
+        android:src="@raw/burger"
+        android:id="@+id/videoView"
+        android:layout_below="@+id/tvSplashTitle"
+        />
+
+    <TextView
+        android:id="@+id/tvSplashTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:text="Fast Fooder "
+        android:textColor="@color/background_color"
+        android:textSize="24sp"
+        android:fontFamily="@font/atomic_age"
+        android:textStyle="bold" />
+
+</LinearLayout>
