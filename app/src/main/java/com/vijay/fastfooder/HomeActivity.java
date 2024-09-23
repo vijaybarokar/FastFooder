@@ -74,3 +74,8 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
         return true;
     }
 }
+
+
+
+
+//<!--     added project to git-->
